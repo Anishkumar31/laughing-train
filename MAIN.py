@@ -64,6 +64,7 @@ forecast_label.pack()
 for forecast in self.forecast_data:
  date_label = Label(root, text=forecast["date"], font=("Arial", 16), bg="white")
  date_label.pack()
+ 
 
 
 
