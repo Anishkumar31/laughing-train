@@ -45,6 +45,10 @@ def get_weather_data(self, city_name):
         self.city_name = city_name
         self.get_current_weather_data()
         self.get_forecast_data()
+def display_weather_data(self):
+        root = Tk()
+        root.title(f"Weather in {self.city_name}")
+        root.geometry("400x400")
 
       
 
