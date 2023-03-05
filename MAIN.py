@@ -60,7 +60,10 @@ temperature_label.pack()
 weather_label = Label(root, text=self.weather_description, font=("Arial", 20), bg="white")
 weather_label.pack()
 forecast_label = Label(root, text="Forecast:", font=("Arial", 20), bg="white")
-
+forecast_label.pack()
+for forecast in self.forecast_data:
+ date_label = Label(root, text=forecast["date"], font=("Arial", 16), bg="white")
+ date_label.pack()
 
 
 
