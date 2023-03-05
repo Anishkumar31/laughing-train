@@ -65,8 +65,11 @@ for forecast in self.forecast_data:
  date_label = Label(root, text=forecast["date"], font=("Arial", 16), bg="white")
  date_label.pack()
  time_label = Label(root, text=forecast["time"], font=("Arial", 16), bg="white")
-time_label.pack()
-temperature_label = Label(root, text=f"{forecast['temperature']}°C", font=("Arial", 16),
+ time_label.pack()
+ temperature_label = Label(root, text=f"{forecast['temperature']}°C", font=("Arial", 16),
+ forecast_label = Label(root, text="Forecast:", font=("Arial", 20), bg="white")
+        forecast_label.pack()
+        for forecast in self.forecast_data:
 
 
 
