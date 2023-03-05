@@ -5,3 +5,5 @@ from tkinter import Tk, Label, PhotoImage, messagebox
 
 class WeatherApp:
 def _init_(self, api_key):
+ self.api_key = api_key
+        self.city_name = None
